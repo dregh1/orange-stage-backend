@@ -20,7 +20,6 @@
         implementation 'io.quarkus:quarkus-hibernate-orm-panache'
         implementation 'io.quarkus:quarkus-jdbc-postgresql'
     //    implementation 'com.google.code.gson:gson:2.8.8' // Utilisez la dernière version disponible
-        implementation 'io.quarkus:quarkus-resteasy-reactive-jackson'
         implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
 
     // fournisseur de token
@@ -39,9 +38,7 @@
 //        implementation 'io.quarkus:quarkus-smallrye-security:2.10.2.Final'
 //        implementation 'io.quarkus:quarkus-smallrye-security'
 
-    // keycloack
 
-        implementation("io.quarkus:quarkus-resteasy-reactive-jackson")
 
         //taloha
 //        implementation 'io.quarkus:quarkus-oidc'
@@ -74,6 +71,12 @@
         //CAMUNDA
         implementation 'org.camunda.bpm.quarkus:camunda-bpm-quarkus-engine:7.20.0'
 
+
+        // keycloak admin client
+
+
+        implementation("io.quarkus:quarkus-keycloak-admin-client-reactive")
+        implementation("io.quarkus:quarkus-resteasy-reactive-jackson")
     }
 
     group 'org.dre'
